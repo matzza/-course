@@ -1,0 +1,16 @@
+title: اخترق
+description: 'https://e.pcloud.link/publink/show?code=XZMVW7ZiWbWEY6jSlRssfGjE6aP8m5iAAwV'
+template:
+  repo: '-template'
+  name: ''
+before:
+  - type: createIssue
+    title: Welcome!
+    body: new-issue.md
+steps:
+  - title: First step
+    description: The first step in your course
+    event: issues.assigned
+    link: '{{ repoUrl }}'
+    actions:
+      - type: closeIssue
